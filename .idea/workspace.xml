@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd78ed87-e029-4018-9940-ffc772cee032" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/task1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +19,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -35,10 +39,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/gb/java2"
+    "last_opened_file_path": "D:/gb/java2/src/gb/lesson4/calculator"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.gb.lesson3.phonebook.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gb\java2\src\gb\lesson4\calculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.gb.lesson4.calculator.Main">
     <configuration name="ArrayToMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gb.lesson3.ArrayToMap" />
       <module name="java2" />
@@ -73,14 +82,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gb.lesson4.calculator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson4.calculator.Main" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gb.lesson4.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson4.task1.Main" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.gb.lesson4.calculator.Main" />
+      <item itemvalue="Application.gb.lesson4.task1.Main" />
       <item itemvalue="Application.ArrayToMap" />
       <item itemvalue="Application.gb.lesson3.phonebook.Main" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.gb.lesson4.calculator.Main" />
+        <item itemvalue="Application.gb.lesson4.task1.Main" />
         <item itemvalue="Application.gb.lesson3.phonebook.Main" />
         <item itemvalue="Application.ArrayToMap" />
         <item itemvalue="Application.Main" />

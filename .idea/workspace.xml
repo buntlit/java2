@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd78ed87-e029-4018-9940-ffc772cee032" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gb/lesson4/task1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +31,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/gb/java2/src/gb/lesson4/calculator"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/gb/java2/src/gb/lesson4/calculator&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gb\java2\src\gb\lesson4\calculator" />
@@ -147,6 +144,11 @@
           <url>file://$PROJECT_DIR$/src/gb/lesson3/phonebook/Main.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

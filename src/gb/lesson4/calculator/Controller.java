@@ -24,17 +24,19 @@ public class Controller {
     }
 
     private void printNumber(int number) {
-        if (!textArea.getText().equals("0")) {
+        String textAreaText = textArea.getText();
+        if (!textAreaText.equals("0")) {
             textArea.appendText("" + number);
         } else {
             textArea.setText("" + number);
         }
-        if (!checkCommand(textArea.getText())) {
-            String textAreaText = textArea.getText().substring(0, String.valueOf(result).length() - 1);
-            String subStr = textArea.getText().substring(String.valueOf(result).length() - 1);
-            if (subStr.startsWith("0") && subStr.length() > 1 && number == 0) {
-                textArea.setText(textArea.getText().substring(0, textArea.getText().length() - 1));
-            } else if (subStr.startsWith("0") && number != 0) {
+        if (!isCommand(textAreaText)) {
+            int valueLength = String.valueOf(result).length() - 1;
+            String textAreaTextSub = textAreaText.substring(valueLength);
+            boolean startsWithZeros = textAreaTextSub.startsWith("0");
+            if (startsWithZeros && textAreaTextSub.length() > 1 && number == 0) {
+                textArea.setText(textAreaText.substring(0, textAreaText.length() - 1));
+            } else if (startsWithZeros && number != 0) {
                 textArea.setText(textAreaText + number);
             }
         }
@@ -49,7 +51,7 @@ public class Controller {
     private void checkPercentage() {
         String textAreaText = textArea.getText();
         double subNumber = 0;
-        if (!checkCommand(textAreaText) && checkCommandAtEnd(textAreaText)) {
+        if (!isCommand(textAreaText) && isCommandAtEnd(textAreaText)) {
             if (textAreaText.contains("+")) {
                 subNumber = result * parsingString(textAreaText, '+') / 100;
             } else if (textAreaText.indexOf('-', 1) != -1) {
@@ -107,7 +109,7 @@ public class Controller {
             textArea.setText(textAreaText.substring(0, textAreaText.length() - 1));
             textAreaText = textArea.getText();
         }
-        if (checkCommand(textAreaText)) {
+        if (isCommand(textAreaText)) {
             result = Double.parseDouble(textAreaText);
             textArea.appendText(command);
         } else {
@@ -125,17 +127,22 @@ public class Controller {
     }
 
     private void printMark() {
-        if (textArea.getText().indexOf('.') == -1) {
-            textArea.appendText("" + '.');
+        String textAreaText = textArea.getText();
+        if (textAreaText.indexOf('.') == -1) {
+            if (isCommandAtEnd(textAreaText)) {
+                textArea.appendText(".");
+            } else {
+                textArea.appendText("0.");
+            }
         } else {
-            if (!checkCommand(textArea.getText())) {
+            if (!isCommand(textAreaText)) {
                 String subStr = "" + result;
-                String str = textArea.getText().substring(subStr.length(), textArea.getText().length());
+                String str = textAreaText.substring(subStr.length(), textAreaText.length());
                 if (str.length() == 1) {
                     textArea.appendText("0");
                 }
                 if (str.indexOf('.') == -1) {
-                    textArea.appendText("" + '.');
+                    textArea.appendText(".");
                 }
             }
         }
@@ -149,7 +156,7 @@ public class Controller {
 
     private void sumNumbers() {
         String textAreaText = textArea.getText();
-        if (!checkCommand(textAreaText) && checkCommandAtEnd(textAreaText)) {
+        if (!isCommand(textAreaText) && isCommandAtEnd(textAreaText)) {
             summarize(textAreaText);
             output(textArea, "");
         }
@@ -158,18 +165,19 @@ public class Controller {
 
     @FXML
     private void onButtonPlusMinus(ActionEvent actionEvent) {
-        if (checkCommand(textArea.getText())) {
-            result = (-1) * Double.parseDouble(textArea.getText());
+        String textAreaText = textArea.getText();
+        if (isCommand(textAreaText)) {
+            result = (-1) * Double.parseDouble(textAreaText);
             output(textArea, "");
         }
         textArea.requestFocus();
     }
 
-    private boolean checkCommand(String string) {
+    private boolean isCommand(String string) {
         return !string.contains("+") && string.indexOf('-', 1) == -1 && !string.contains("*") && !string.contains("/");
     }
 
-    private boolean checkCommandAtEnd(String string) {
+    private boolean isCommandAtEnd(String string) {
         return !string.endsWith("+") && !string.endsWith("-") && !string.endsWith("*") && !string.endsWith("/") && !string.endsWith(".");
     }
 
@@ -203,29 +211,58 @@ public class Controller {
 
     @FXML
     private void onTypedOnKeyboard() {
-        String numbers = "1234567890";
-        String commands = "+-/*";
         KeyCodeCombination SHIFT_PERCENT = new KeyCodeCombination(KeyCode.DIGIT5, KeyCombination.SHIFT_DOWN);
         KeyCodeCombination SHIFT_PLUS = new KeyCodeCombination(KeyCode.EQUALS, KeyCombination.SHIFT_DOWN);
+        KeyCodeCombination SHIFT_MULTIPLY = new KeyCodeCombination(KeyCode.DIGIT8, KeyCombination.SHIFT_DOWN);
         textArea.setOnKeyReleased(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
-                if (event.getCode() == KeyCode.ESCAPE) {
-                    cleanAll();
-                } else if (event.getCode() == KeyCode.BACK_SPACE) {
-                    deleteOneSymbol();
-                } else if (SHIFT_PERCENT.match(event)) {
-                    checkPercentage();
-                } else if (numbers.contains(event.getText()) && event.getText().length() > 0) {
-                    printNumber(Integer.parseInt(event.getText()));
-                } else if (SHIFT_PLUS.match(event)) {
-                    printCommand("+");
-                } else if (commands.contains(event.getText()) && event.getText().length() > 0) {
-                    printCommand(event.getText());
-                } else if (event.getText().equals("=") || event.getCode() == KeyCode.ENTER) {
-                    sumNumbers();
-                } else if (event.getText().equals(".")) {
-                    printMark();
+
+                switch (event.getCode()) {
+                    case ESCAPE:
+                        cleanAll();
+                        break;
+                    case BACK_SPACE:
+                        deleteOneSymbol();
+                        break;
+                    case ENTER:
+                        sumNumbers();
+                        break;
+                    default:
+                        if (SHIFT_PERCENT.match(event)) {
+                            checkPercentage();
+                        } else if (SHIFT_PLUS.match(event)) {
+                            printCommand("+");
+                        } else if (SHIFT_MULTIPLY.match(event)) {
+                            printCommand("*");
+                        } else if (event.getText().length() > 0) {
+                            switch (event.getText()) {
+                                case "1":
+                                case "2":
+                                case "3":
+                                case "4":
+                                case "5":
+                                case "6":
+                                case "7":
+                                case "8":
+                                case "9":
+                                case "0":
+                                    printNumber(Integer.parseInt(event.getText()));
+                                    break;
+                                case "+":
+                                case "-":
+                                case "*":
+                                case "/":
+                                    printCommand(event.getText());
+                                    break;
+                                case "=":
+                                    sumNumbers();
+                                    break;
+                                case ".":
+                                    printMark();
+                                    break;
+                            }
+                        }
                 }
             }
         });

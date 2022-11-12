@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd78ed87-e029-4018-9940-ffc772cee032" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -30,15 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/gb/java2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/gb/java2/src/gb/lesson4/calculator&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.gb.lesson3.phonebook.Main">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gb\java2\src\gb\lesson4\calculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.gb.lesson4.calculator.Main">
     <configuration name="ArrayToMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gb.lesson3.ArrayToMap" />
       <module name="java2" />
@@ -73,14 +79,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gb.lesson4.calculator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson4.calculator.Main" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gb.lesson4.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson4.task1.Main" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.gb.lesson4.calculator.Main" />
+      <item itemvalue="Application.gb.lesson4.task1.Main" />
       <item itemvalue="Application.ArrayToMap" />
       <item itemvalue="Application.gb.lesson3.phonebook.Main" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.gb.lesson4.calculator.Main" />
+        <item itemvalue="Application.gb.lesson4.task1.Main" />
         <item itemvalue="Application.gb.lesson3.phonebook.Main" />
         <item itemvalue="Application.ArrayToMap" />
         <item itemvalue="Application.Main" />
@@ -120,6 +144,11 @@
           <url>file://$PROJECT_DIR$/src/gb/lesson3/phonebook/Main.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

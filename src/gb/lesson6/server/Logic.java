@@ -26,6 +26,9 @@ public class Logic {
             try {
                 while (true) {
                     String strInSocket = inSocket.readUTF();
+                    if (strInSocket.equals(END_KEY)) {
+                        break;
+                    }
                     System.out.println(name + strInSocket);
                 }
             } catch (IOException e) {
@@ -38,10 +41,11 @@ public class Logic {
           try {
                 while (true) {
                     String strInConsole = inConsole.nextLine();
+                    out.writeUTF(strInConsole);
+                    out.flush();
                     if (strInConsole.equals(END_KEY)) {
                         break;
                     }
-                    out.writeUTF(strInConsole);
                 }
             } catch (IOException e) {
                 e.printStackTrace();

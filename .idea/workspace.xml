@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd78ed87-e029-4018-9940-ffc772cee032" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/server/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/server/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +38,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/gb/java2/src/gb/lesson4/calculator&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/java2/25072019java2/out/production/25072019java2/lesson_6&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -43,9 +46,16 @@
       <recent name="D:\gb\java2\src\gb\lesson4\calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.gb.lesson5.Main">
-    <configuration name="ArrayToMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gb.lesson3.ArrayToMap" />
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson6.client.Client" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.lesson6.server.Server" />
       <module name="java2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -53,13 +63,6 @@
     </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gb.lesson1.Main" />
-      <module name="java2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gb.lesson3.phonebook.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gb.lesson3.phonebook.Main" />
       <module name="java2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,19 +91,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
       <item itemvalue="Application.gb.lesson5.Main" />
       <item itemvalue="Application.gb.lesson4.calculator.Main" />
       <item itemvalue="Application.gb.lesson4.task1.Main" />
-      <item itemvalue="Application.ArrayToMap" />
-      <item itemvalue="Application.gb.lesson3.phonebook.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.gb.lesson5.Main" />
         <item itemvalue="Application.gb.lesson4.calculator.Main" />
         <item itemvalue="Application.gb.lesson4.task1.Main" />
-        <item itemvalue="Application.gb.lesson3.phonebook.Main" />
-        <item itemvalue="Application.ArrayToMap" />
       </list>
     </recent_temporary>
   </component>
@@ -145,5 +148,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.net.Socket" memberName="closed" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

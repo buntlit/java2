@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd78ed87-e029-4018-9940-ffc772cee032" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gb/chat/client/MainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/chat/client/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gb/chat/client/main_view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/server/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/server/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gb/lesson6/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gb/lesson6/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,22 +33,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/java2/25072019java2/out/production/25072019java2/lesson_6&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/gb/java2/src/gb/chat/client",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gb\java2\src\gb\chat\client" />
       <recent name="D:\gb\java2\src\gb\lesson4\calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.MainClient">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gb.lesson6.client.Client" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.chat.client.MainClient" />
+      <module name="java2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gb.chat.server.MainServer" />
       <module name="java2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,20 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gb.lesson4.calculator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gb.lesson4.calculator.Main" />
-      <module name="java2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gb.lesson4.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gb.lesson4.task1.Main" />
-      <module name="java2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="gb.lesson5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gb.lesson5.Main" />
       <module name="java2" />
@@ -91,19 +95,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.MainClient" />
+      <item itemvalue="Application.MainServer" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.gb.lesson5.Main" />
-      <item itemvalue="Application.gb.lesson4.calculator.Main" />
-      <item itemvalue="Application.gb.lesson4.task1.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClient" />
+        <item itemvalue="Application.MainServer" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.gb.lesson5.Main" />
-        <item itemvalue="Application.gb.lesson4.calculator.Main" />
-        <item itemvalue="Application.gb.lesson4.task1.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +149,11 @@
           <url>file://$PROJECT_DIR$/src/gb/lesson4/calculator/Controller.java</url>
           <line>129</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gb/chat/client/RegController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
